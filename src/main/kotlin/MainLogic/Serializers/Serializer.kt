@@ -1,7 +1,7 @@
 package org.example.MainLogic.Serializers
 
-interface Serializer {
+interface Serializer<T> {
 
-    fun Serialize()
-    fun Deserialize()
+    fun Serialize(dataclassobject: T)
+    fun Deserialize(jsonString: String)
 }
